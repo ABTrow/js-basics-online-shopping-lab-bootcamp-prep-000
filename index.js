@@ -23,6 +23,7 @@ function viewCart() {
   } else {
     let keys = Object.keys(cart);
     console.log(keys);
+    console.log("whyyyy");
     if (keys.length === 1) {
       return `In your cart, you have ${keys[0]} at \$${cart[keys[0]]}.`;
     }
