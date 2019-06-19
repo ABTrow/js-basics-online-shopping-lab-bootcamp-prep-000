@@ -20,13 +20,8 @@ function viewCart() {
   // write your code here
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
-  } else {
-    let keys = Object.keys(cart);
-    console.log(keys);
-    console.log("whyyyy");
-    if (keys.length === 1) {
-      return `In your cart, you have ${keys[0]} at \$${cart[keys[0]]}.`;
-    }
+  } else if (cart.length === 1) {
+    return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}.`;
   }
 }
 
