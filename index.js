@@ -22,6 +22,16 @@ function viewCart() {
     return "Your shopping cart is empty.";
   } else if (cart.length === 1) {
     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}.`;
+  } else {
+    let str = "In your cart, you have "
+    for (let i = 0; i < cart.length; i++) {
+      if (i !== cart.length - 1) {
+        str += `${itemName} at \$${itemPrice}, `;
+      } else {
+        str += `and ${itemName} at \$${itemPrice}.`;
+      }
+    }
+    return str;
   }
 }
 
