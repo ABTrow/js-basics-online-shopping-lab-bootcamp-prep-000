@@ -23,7 +23,7 @@ function viewCart() {
   } else {
     let keys = Object.keys(cart);
     if (keys.length === 1) {
-      return `In your cart, you have ${keys[0]} at \$${cart[keys]}.`
+      return `In your cart, you have ${keys[0]} at \$${cart[keys]}.`;
     }
   }
 }
